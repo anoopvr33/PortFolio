@@ -28,6 +28,6 @@ app.get("*", (req, res) => {
   res.status(404).json({ message: "Route not found" });
 });
 
-server.listen(3400, "0.0.0.0", () => {
+server.listen(3600, "0.0.0.0", () => {
   console.log("Server is running on port 3400");
 });
