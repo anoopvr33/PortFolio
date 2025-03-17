@@ -1,0 +1,34 @@
+.about {
+  height: 100vh;
+  align-items: start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 15px;
+  background-color: rgb(29, 29, 29);
+}
+.about h2 {
+  color: rgb(255, 228, 91);
+}
+.about p {
+  color: white;
+  line-height: 1.5;
+  /* list-style-type: lower-alpha; */
+  /* list-style: low; */
+  /* width: ; */
+  font-style: italic;
+}
+
+@media screen and (min-width: 800px) {
+  .about {
+    width: 800px;
+    line-height: 2.5;
+    /* gap: 2px; */
+    /* line-gap-override: 4; */
+    /* lin */
+  }
+  .about h2 {
+    font-size: 40px;
+  }
+}

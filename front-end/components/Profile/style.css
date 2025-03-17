@@ -1,0 +1,122 @@
+.profile {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* background-color: antiquewhite; */
+  background-color: rgb(29, 29, 29);
+}
+.home-3 {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  padding-left: 20px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: start; */
+  /* padding-left: 20px; */
+  /* height: 90vh; */
+  /* background-color: antiquewhite; */
+  animation: pop 1s;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.gradient {
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.616),
+    rgba(255, 255, 255, 0)
+  );
+}
+.home-3 img {
+  height: 100%;
+  scale: 1.2;
+  /* object-fit: fill; */
+  filter: saturate(0);
+}
+.home-3 h3 {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  font-size: 30px;
+  color: white;
+  text-shadow: -3px 5px 4px rgba(0, 0, 0, 0.381);
+  /* text-decoration: underline; */
+}
+.home-3 .hai {
+  font-size: 35px;
+  color: black;
+}
+.home-3 h2 {
+  position: absolute;
+  top: 180px;
+  left: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: -3px 5px 4px rgba(0, 0, 0, 0.408);
+}
+.home-3 .mern {
+  color: rgb(255, 209, 70);
+  font-size: 40px;
+  /* filter: brightness(2); */
+}
+
+.home-4 p {
+  color: white;
+  padding: 15px 10px;
+  line-height: 25px;
+  /* font-weight: 600; */
+  font-style: italic;
+}
+
+@media screen and (min-width: 1200px) {
+  .home-3 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.559),
+      rgba(0, 0, 0, 0.625)
+    );
+    filter: drop-shadow();
+    /* filter: drop-shadow(white, black); */
+  }
+  .gradient {
+    height: 100vh;
+    width: 0;
+  }
+  .home-3 h2 {
+    top: 200px;
+    left: 700px;
+  }
+  .home-4 p {
+    position: absolute;
+    top: 280px;
+    left: 690px;
+  }
+
+  .home-3 h3 {
+    /* width: 70%; */
+    top: none;
+    bottom: 150px;
+    left: 690px;
+    /* right: 200px; */
+    font-size: 80px;
+    text-decoration: underline;
+  }
+  .home-3 .mern {
+    font-size: 140px;
+  }
+}
