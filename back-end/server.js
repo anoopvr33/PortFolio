@@ -12,14 +12,14 @@ dotenv.config({ path: "./.env" });
 
 const frontendUrl = process.env.FRONTEND_URL;
 
-// const corsOption = {
-//   origin: frontendUrl,
-//   methods: "GET,POST,PUT,DELETE",
-// };
+const corsOption = {
+  origin: frontendUrl,
+  methods: "GET,POST,PUT,DELETE",
+};
 
 app.use(express.json());
 app.use(express.static("public"));
-app.use(cors());
+app.use(cors(corsOption));
 app.use(router);
 
 const server = http.createServer(app);
