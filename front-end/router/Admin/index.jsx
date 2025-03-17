@@ -18,6 +18,8 @@ const Apple = () => {
     GetData();
   }, []);
 
+  useEffect(() => {}, [data]);
+
   return (
     <div className="apple">
       <h1>Hi Im Admin</h1>

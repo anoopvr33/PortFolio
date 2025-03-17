@@ -1,12 +1,14 @@
 import mongoose from "mongoose";
 
 mongoose
-  .connect("mongodb://localhost:27017/PortFolio")
+  .connect(
+    "mongodb+srv://AnoopVR:anoopvr333@cluster0.1seql.mongodb.net/ShopSpace"
+  )
   .then(() => {
     console.log("Connected to MongoDB");
   })
   .catch((e) => {
-    console.log(e.message);
+    console.log("error", e.message);
   });
 
 export default mongoose;
