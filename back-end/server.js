@@ -13,8 +13,9 @@ dotenv.config({ path: "./.env" });
 const frontendUrl = process.env.FRONTEND_URL;
 
 const corsOption = {
-  origin: frontendUrl,
-  methods: "GET,POST,PUT,DELETE",
+  origin: "https://port-folio-wf83.vercel.app", // Allow only your frontend domain
+  methods: ["GET", "POST"], // Specify allowed methods
+  allowedHeaders: ["Content-Type"],
 };
 
 app.use(express.json());
