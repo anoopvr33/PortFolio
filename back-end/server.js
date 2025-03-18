@@ -10,12 +10,10 @@ const app = express();
 
 dotenv.config({ path: "./.env" });
 
-// const frontendUrl = process.env.FRONTEND_URL;
 
 const corsOption = {
   origin: "https://port-folio-fr-ont.vercel.app/",
   methods: ["GET,POST"],
-  Credential: true,
 };
 
 app.use(express.json());
@@ -29,6 +27,6 @@ app.get("*", (req, res) => {
   res.status(404).json({ message: "Route not found" });
 });
 
-server.listen(3400, "0.0.0.0", () => {
-  console.log("Server is running on port 3400");
+server.listen(3600, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
