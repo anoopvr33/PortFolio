@@ -13,7 +13,7 @@ dotenv.config({ path: "./.env" });
 const frontendUrl = process.env.FRONTEND_URL;
 
 const corsOption = {
-  origin: frontendUrl,
+  origin: "https://port-folio-fr-ont.vercel.app/",
   methods: "GET,POST,PUT,DELETE",
 };
 
