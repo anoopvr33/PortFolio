@@ -16,6 +16,7 @@ const corsOption = {
   credential: true,
 };
 
+// - us ecors
 app.use(cors(corsOption));
 app.options("*", cors(corsOption));
 
