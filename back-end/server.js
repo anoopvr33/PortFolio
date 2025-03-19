@@ -12,7 +12,7 @@ dotenv.config({ path: "./.env" });
 
 
 const corsOption = {
-  origin: ["https://port-folio-fr-ont.vercel.app/"],
+  origin: ["https://port-folio-fr-ont.vercel.app"],
   methods: ["GET,POST"],
   credential: true,
 };
