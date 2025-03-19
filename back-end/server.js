@@ -10,6 +10,7 @@ const app = express();
 
 dotenv.config({ path: "./.env" });
 
+
 const corsOption = {
   origin: ["https://port-folio-fr-ont.vercel.app"],
   methods: ["GET,POST"],
@@ -22,7 +23,6 @@ app.options("*", cors(corsOption));
 
 app.use(express.json());
 app.use(express.static("public"));
-
 app.use(router);
 
 const server = http.createServer(app);
