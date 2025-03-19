@@ -25,7 +25,7 @@ app.use(express.static("public"));
 
 app.use(router);
 
-const server = http.createServer(app);
+// const server = http.createServer(app);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -35,6 +35,6 @@ app.get("*", (req, res) => {
   res.status(404).json({ message: "Route not found" });
 });
 
-server.listen(3300, () => {
+app.listen(3300, () => {
   console.log("Server is running on port 3300");
 });

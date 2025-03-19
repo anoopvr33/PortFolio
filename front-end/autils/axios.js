@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const customAxios = axios.create({
-  baseURL: import.meta.env.VITE_REACT_APP_BASE_URL,
+  baseURL: "https://port-folio-b-ack.vercel.app",
   headers: {
     Authorization: `Bearer ${localStorage.getItem("token")}`,
   },
