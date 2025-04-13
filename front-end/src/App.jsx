@@ -13,7 +13,7 @@ function App() {
         <Route path="/admin-home" element={<Apple />}></Route>
         <Route path="/admin-login" element={<AdminLogin />}></Route>
         <Route path="/add-image" element={<AddImage />}></Route>
-      </Routes>{" "}
+      </Routes>
     </div>
   );
 }

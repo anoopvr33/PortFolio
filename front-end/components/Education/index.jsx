@@ -43,14 +43,16 @@ const Education = () => {
 
   return (
     <div ref={sectionRef} className={`${isVisible ? "visible" : "education"} `}>
+      <h1>EDUCATION</h1>
       <div className="exp">
-        <h2>GVR</h2>
+        <h2>Druv360</h2>
         <span>
           <p>Mern stack developer as Trainee</p>
           <p style={{ color: "rgb(195, 195, 195)", padding: "3px 0px" }}>
             July 2024 - Nov 2024
           </p>
         </span>
+        <div className="shadow"></div>
       </div>
       <div className="exp">
         <h2> TechMindz</h2>
@@ -59,7 +61,8 @@ const Education = () => {
           <p style={{ color: "rgb(195, 195, 195)", padding: "3px 0px" }}>
             Oct 2023 - Feb 2024
           </p>
-        </span>
+        </span>{" "}
+        <div className="shadow"></div>
       </div>
       <div className="exp">
         <h2>SreeRama Gov. College Triprayar</h2>
@@ -68,7 +71,8 @@ const Education = () => {
           <p style={{ color: "rgb(195, 195, 195)", padding: "3px 0px" }}>
             2020-2023
           </p>
-        </span>
+        </span>{" "}
+        <div className="shadow"></div>
       </div>
       <div className="exp">
         <h2>Valapad HSS</h2>
@@ -77,7 +81,8 @@ const Education = () => {
           <p style={{ color: "rgb(195, 195, 195)", padding: "3px 0px" }}>
             2018-2020
           </p>
-        </span>
+        </span>{" "}
+        <div className="shadow"></div>
       </div>
     </div>
   );

@@ -34,56 +34,78 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="project">
-      <section>
-        <div className="project-head">
-          <h2>FlipKart</h2>
-          <p>
-            clone model of flipcart by adding extra features.User can buy items
-            using this site
-          </p>
-        </div>
+    <div className="project-main">
+      <h1>PROJECTS</h1>
+      <div className="project">
+        <section>
+          <div className="project-head">
+            <h2>ECommerce</h2>
+            <p>
+              clone model of flipcart by adding extra features.User can buy
+              items using this site
+            </p>
+          </div>
 
-        <img src="/shoping.jpg" alt="" />
-        <img src="/MERNLOGO.png" alt="" />
-      </section>
-      <section>
-        <div className="project-head">
-          <h2>ColSector</h2>
-          <p>
-            A School Management System developed using MERN, Manage
-            Librarian,Staff,Students.
-          </p>
-        </div>
-
-        <img src="/school.jpg" alt="" />
-        <img src="/MERNLOGO.png" alt="" />
-      </section>
-      <section>
-        <div className="project-head">
-          <h2>SalesBilling</h2>
-          <p>
-            Billing system use Real-Time connection for the accuracy, Automatic
-            total value calulation of items
-          </p>
-        </div>
-
-        <img src="/biling.jpg" alt="" />
-        <img src="/MERNLOGO.png" alt="" />
-      </section>
-
-      <section>
-        <div className="project-head">
-          <h2>Matrimony</h2>
-          <p>
-            A Matrimony website developed using MERN, Manage user, Profile,
-            Search, Match and chat feature.
-          </p>
-        </div>
-
-        <img className="s2-img-2" src="/matrimony.jpg" alt="" />
-        <img src="/MERNLOGO.png" alt="" />
-      </section>
+          <img src="/shoping.jpg" alt="" />
+          <div className="logo">
+            <span id="mongo">M</span>
+            <span id="expres">E</span>
+            <span id="react">R</span>
+            <span id="node">N</span>
+          </div>
+        </section>
+        <section>
+          <div className="project-head">
+            <h2>Matrimony</h2>
+            <p>
+              A Matrimony website developed using MERN, Manage user, Profile,
+              Search, Match and chat feature.
+            </p>
+          </div>
+          <img className="s2-img-2" src="/matrimony.jpg" alt="" />{" "}
+          <div className="logo">
+            <span id="mongo">M</span>
+            <span id="expres">E</span>
+            <span id="react">R</span>
+            <span id="node">N</span>
+          </div>
+          {/* <img src="/MERNLOGO.png" alt="" /> */}
+        </section>
+        <section>
+          <div className="project-head">
+            <h2>School Management</h2>
+            <p>
+              A School Management System developed using MERN, Manage
+              Librarian,Staff,Students.
+            </p>
+          </div>
+          <img src="/school.jpg" alt="" />{" "}
+          <div className="logo">
+            <span id="mongo">M</span>
+            <span id="expres">E</span>
+            <span id="react">R</span>
+            <span id="node">N</span>
+          </div>
+          {/* <img src="/MERNLOGO.png" alt="" /> */}
+        </section>
+        <section>
+          <div className="project-head">
+            <h2>SalesBilling</h2>
+            <p>
+              Billing system use Real-Time connection for the accuracy,
+              Automatic total value calulation of items
+            </p>
+          </div>
+          <img src="/biling.jpg" alt="" />{" "}
+          <div className="logo">
+            <span id="mongo">M</span>
+            <span id="expres">E</span>
+            <span id="react">R</span>
+            <span id="node">N</span>
+          </div>
+          {/* <img src="/MERNLOGO.png" alt="" /> */}
+        </section>
+      </div>
     </div>
   );
 };

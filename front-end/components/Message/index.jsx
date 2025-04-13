@@ -16,16 +16,23 @@ const Message = () => {
   };
 
   const OnUpload = async () => {
+
+    if (data.name === "" || data.email === "" || data.message === "") {
+      toast.error("please fill the fields");
+    } else {
+      toast.success("successfully send");
+    }
     // console.log("button clicked");
-    await axios.post("/guest/message", data);
+    // await axios.post("/guest/message", data);
+
     // alert("message send");
-    toast.success("successfully send");
   };
 
   useEffect(() => {}, []);
   return (
     <div className="message">
       {/* Message */}
+      <h1>MESSAGE</h1>
       <label htmlFor="">
         <input
           name="name"
