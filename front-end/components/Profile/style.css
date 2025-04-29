@@ -114,14 +114,20 @@
 .home-4 .p4 {
   position: relative;
   width: 90vw;
+
+  top: 5px;
+
   white-space: nowrap;
   overflow: scroll;
   text-overflow: clip;
   /* text-overflow: ellipsis; */
   /* white-space: nowrap; */
-  background-color: rgb(253, 58, 123);
+
+  /* background-color: rgb(253, 58, 123); */
+  border: 1px solid rgb(119, 119, 218);
   padding: 5px 10px;
-  border-radius: 20px;
+  border-radius: 10px;
+
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -133,7 +139,10 @@
   display: none;
 }
 
-.home-4 .p4 .home-4 label {
+
+.home-4 label {
+
+
   margin-top: 10px;
   display: flex;
   flex-direction: column;

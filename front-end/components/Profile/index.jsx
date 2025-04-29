@@ -35,13 +35,17 @@ const Profile = () => {
             <span>MERN</span> Developer
           </h1>
           <p>
-            MERN developer with experience in buildind dynamic, scalable web
+
+            MERN developer with experience in building dynamic, scalable web
+
             applications
           </p>
           <label htmlFor="">
             <p className="p5">Skills</p>
             <div className="p4">
-              React.js, Next.js, Redux, Express.js, Node.js, MongoDB, TailWind,
+
+              React.js, Next.js, MonogDB, Express.js, Node.js, Redux, TailWind,
+
               Bootstrap, CSS <span> </span>
             </div>
           </label>
