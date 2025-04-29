@@ -17,12 +17,12 @@ export default defineConfig({
   //   },
   // },
 
-  // server: {
-  //   proxy: "http://anoopvrportfolio.site:3400/",
-  //   host: "0.0.0.0", // Make the dev server accessible on your local network
-  //   port: 3400, // You can change the port if you like
-  //   open: true, // Optionally, open the app in the browser automatically
-  // },
+  server: {
+    proxy: "http://anoopvrportfolio.site:3400/",
+    host: "0.0.0.0", // Make the dev server accessible on your local network
+    port: 3400, // You can change the port if you like
+    open: true, // Optionally, open the app in the browser automatically
+  },
   plugins: [react()],
 });
 
