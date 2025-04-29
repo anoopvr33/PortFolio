@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import axios from "../../autils/axios";
 import { ToastContainer, toast } from "react-toastify";
+// import NodeJS from "react";
 
 const Message = () => {
+  // var process = NodeJS.Process;
+
+  // console.log("haaaaaauuusid", import.meta.env.VITE_REACT_APP_BASE_URL);
+
   const [data, setData] = useState({ name: "", email: "", message: "" });
 
   const OnSendMessage = (e) => {
@@ -11,6 +16,7 @@ const Message = () => {
   };
 
   const OnUpload = async () => {
+
     if (data.name === "" || data.email === "" || data.message === "") {
       toast.error("please fill the fields");
     } else {
@@ -18,9 +24,11 @@ const Message = () => {
     }
     // console.log("button clicked");
     // await axios.post("/guest/message", data);
+
     // alert("message send");
   };
 
+  useEffect(() => {}, []);
   return (
     <div className="message">
       {/* Message */}
