@@ -24,6 +24,7 @@
     rgba(119, 119, 218, 0.31)
   );
   /* background-color: rgb(119, 119, 218); */
+
   box-shadow: -3px 3px 0px rgb(253, 58, 123);
   border: 1px solid rgb(253, 58, 123);
   color: rgb(255, 255, 255);
@@ -40,9 +41,10 @@
   color: white;
   font-weight: bold;
   padding: 5px 15px;
+
   border-radius: 10px;
   /* background-color: rgb(119, 119, 218); */
-  border: 1px solid rgb(119, 119, 218);
+
   /* box-shadow: -3px 3px 2px rgb(253, 58, 123); */
 }
 

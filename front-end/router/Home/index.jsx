@@ -60,6 +60,7 @@ const Home = () => {
         </section>
 
         {/* --------------------------------------------------------- about  //////// */}
+
         <section id="sec4" className="section-4">
           <About></About>
         </section>

@@ -17,7 +17,9 @@ const Apple = () => {
     console.log("render");
     GetData();
   }, []);
+
   useEffect(() => {}, [data]);
+
 
   return (
     <div className="apple">
