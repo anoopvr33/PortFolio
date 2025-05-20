@@ -1,14 +1,15 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 mongoose
-  .connect(
-    "mongodb+srv://AnoopVR:anoopvr333@cluster0.1seql.mongodb.net/ShopSpace"
-  )
+  .connect(process.env.MONGODB_URL)
   .then(() => {
     console.log("Connected to MongoDB");
   })
   .catch((e) => {
-    console.log("error", e.message);
+    console.log(e.message);
   });
 
 export default mongoose;

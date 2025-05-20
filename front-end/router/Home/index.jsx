@@ -42,7 +42,7 @@ const Home = () => {
     }
     if (Port === "Link") {
       return (window.location.href =
-        "https://www.linkedin.com/in/anoop-vr-9b6b67275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ");
+        "https://www.linkedin.com/in/anoop-v-r-9b6b67275");
     }
     if (Port === "What") {
       return (window.location.href = "https://wa.me/qr/TQXJA5YVLEHVP1");
@@ -58,6 +58,11 @@ const Home = () => {
         <section id="sec1" className="section-1">
           <Profile></Profile>
         </section>
+
+        {/* --------------------------------------------------------- about  //////// */}
+        <section id="sec4" className="section-4">
+          <About></About>
+        </section>
         {/* --------------------------------------------------------- project  //////// */}
 
         <section id="sec2" className="section-2">
@@ -69,11 +74,7 @@ const Home = () => {
         <section id="sec3" className="section-3">
           <Education></Education>{" "}
         </section>
-        {/* --------------------------------------------------------- about  //////// */}
 
-        <section id="sec4" className="section-4">
-          <About></About>
-        </section>
         {/* --------------------------------------------------------- message  //////// */}
 
         <section id="sec5" className="section-5">
@@ -95,24 +96,6 @@ const Home = () => {
       </div>
 
       {/* --------------------------------------------------------- section selection icon  */}
-      <div className="contact-bar">
-        <a href="#sec1">
-          <i className="fa-solid fa-house"></i>
-        </a>
-        <a href="#sec2">
-          <i className="fa-solid fa-gears"></i>
-        </a>
-        <a href="#sec3">
-          <i className="fa-solid fa-user-graduate"></i>
-        </a>
-
-        <a href="#sec4">
-          <i className="fa-solid fa-align-center"></i>
-        </a>
-        <a href="#sec5">
-          <i className="fa-solid fa-comment"></i>
-        </a>
-      </div>
     </div>
   );
 };

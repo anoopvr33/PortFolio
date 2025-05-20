@@ -17,7 +17,6 @@ const Apple = () => {
     console.log("render");
     GetData();
   }, []);
-
   useEffect(() => {}, [data]);
 
   return (
