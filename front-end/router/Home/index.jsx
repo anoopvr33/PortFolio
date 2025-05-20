@@ -59,6 +59,8 @@ const Home = () => {
           <Profile></Profile>
         </section>
 
+        {/* --------------------------------------------------------- about  //////// */}
+
         <section id="sec4" className="section-4">
           <About></About>
         </section>
@@ -73,7 +75,6 @@ const Home = () => {
         <section id="sec3" className="section-3">
           <Education></Education>{" "}
         </section>
-        {/* --------------------------------------------------------- about  //////// */}
 
         {/* --------------------------------------------------------- message  //////// */}
 

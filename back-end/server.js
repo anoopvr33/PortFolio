@@ -11,6 +11,7 @@ const app = express();
 dotenv.config({ path: "./.env" });
 
 
+
 app.use(express.json());
 app.use(express.static("public"));
 app.use(cors());
@@ -18,13 +19,14 @@ app.use(router);
 
 
 
-// const server = http.createServer(app);
+
 
 app.get("*", (req, res) => {
   res.status(404).json({ message: "Route not found" });
 });
 
 
-app.listen(3300, () => {
-  console.log("Server is running on port 3300");
+server.listen(3400, () => {
+  console.log("Server is running on port 3400");
+});
 

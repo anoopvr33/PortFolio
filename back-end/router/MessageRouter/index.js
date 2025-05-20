@@ -12,7 +12,7 @@ router.post("/message", async (req, res) => {
   //   });
   const body = { ...req.body };
   const msg = await Message.create(body);
-  res.status(200).json(msg);
+  res.status(200).json({ message: msg });
 });
 
 router.get("/get-message", CheckToken(["ADMIN"]), async (req, res) => {

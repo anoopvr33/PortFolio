@@ -20,10 +20,13 @@ const Message = () => {
     if (data.name === "" || data.email === "" || data.message === "") {
       toast.error("please fill the fields");
     } else {
-      toast.success("successfully send");
+      const response = await axios.post("/guest/message", data);
+      if (response.data.message) {
+        toast.success("successfully send");
+      } else {
+        toast.error("error");
+      }
     }
-    // console.log("button clicked");
-    // await axios.post("/guest/message", data);
 
     // alert("message send");
   };
