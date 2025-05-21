@@ -8,7 +8,13 @@ export default defineConfig({
   plugins: [react()],
 });
 // const anoopvrportfolio="0.0.0.0"
+
+
+
+
 // export default defineConfig({
+
+
 // server: {
 //   proxy: {
 //     "/api": {
@@ -27,6 +33,18 @@ export default defineConfig({
 //   },
 //   plugins: [react()],
 // });
+
+
+
+
+
+
+
+
+
+
+
+
 
 // server: {
 //   host: "0.0.0.0", // Make the dev server accessible on your local network
