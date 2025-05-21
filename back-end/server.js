@@ -18,7 +18,7 @@ app.use(cors());
 app.use(router);
 
 
-
+const server = http.createServer(app);
 
 
 app.get("*", (req, res) => {
